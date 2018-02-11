@@ -4,16 +4,6 @@
     Purpose: Generates an image of an n x n grid
 	!! NOTE !! 
 	only works for square dimensions as of yet
-	next steps:
-		- non square dimensions
-		- borders
-		- shade cells
-		- colour specifications
-		- ppm to png / jpg
-		- non square grids
-		- tiling alightment, 1000 x 1000 20
-		- isometric 
-
     @author Grace Han
     @version 1.0 09/02/18
 */
