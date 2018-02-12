@@ -34,13 +34,9 @@ int main(int argc, char *argv[]) {
 
 	int width = atoi(argv[1]);
 	int height = atoi(argv[2]);
-	
 	int size = atoi(argv[3]);
-
 	int gridLine = width / size; 
 
-	cout << width << endl;
-	cout << height << endl;
 	ofstream img ("picture.ppm");
 	img << "P3" << endl;
 	img << width << " " << height << endl;
