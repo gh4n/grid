@@ -1,5 +1,5 @@
 # grid
-generates a n x n grid
+quick n dirty n x n grid generator 
 
 compile w/ g++ -o grid
 then run object executable with arguments dimensions of output image and size of grid
