@@ -18,7 +18,8 @@ using namespace std;
 int main(int argc, char *argv[]) {
 	
 	if (argc != 4) {
-		cout << "Usage: " << argv[0] << " width height size" << endl;
+		cout << "Usage: " << argv[0] << " <width> <height> <size>" << endl;
+		cout << "(Width and Height should be greater than size)" << endl;
 		return 1;
 	}
 
@@ -26,6 +27,11 @@ int main(int argc, char *argv[]) {
 	int height = atoi(argv[2]);
 	int size = atoi(argv[3]);
 	int gridLine = width / size; 
+
+	if(gridLine == 0) {
+		cout << "Width must be greater than or equal to size" << endl;
+		return 1;
+	}
 
 	ofstream img ("picture.ppm");
 	img << "P3" << endl;
@@ -35,7 +41,7 @@ int main(int argc, char *argv[]) {
 	for (int y = 0; y < height; y++) {
 		for (int x = 0; x < width; x++) {
 			int r, g, b;
-			r = g = b = (x != 0 && x % gridLine == 0 ||  y % gridLine == 0) ? 1 : 255; 
+			r = g = b = ((x != 0 && x % gridLine == 0) ||  y % gridLine == 0) ? 1 : 255; 
 			img << r << " " << g << " " << b << endl;
 		}
 	}
