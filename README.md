@@ -5,3 +5,6 @@ compile w/ g++ -o grid
 then run object executable with arguments dimensions of output image and size of grid
 
 that is, ./grid [width] [height] [size]
+
+# update - buggy
+this is apparently doesn't work anymore?
