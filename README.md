@@ -6,5 +6,5 @@ then run object executable with arguments dimensions of output image and size of
 
 that is, ./grid [width] [height] [size]
 
-# update - buggy
-this is apparently doesn't work anymore?
+# update - beware
+very fragile, no error handling, know your inputs
